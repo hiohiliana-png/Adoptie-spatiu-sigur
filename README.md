@@ -1,0 +1,2 @@
+# Adoptie-spatiu-sigur
+Adoptie
