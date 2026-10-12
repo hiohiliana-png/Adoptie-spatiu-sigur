@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: hiohiliana-png/Adoptie-spatiu-sigur
+  branch: main
+
+site_url: https://adoptie-spatiu-sigur.netlify.app
+display_url: https://adoptie-spatiu-sigur.netlify.app
+
+media_folder: "imagini"
+public_folder: "/imagini"
+
+collections:
+  - name: "articole"
+    label: "Articole"
+    folder: "articole"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Titlu", name: "title", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime" }
+      - { label: "Autor", name: "author", widget: "string", default: "Liana Hiohi – psihoterapeut adlerian" }
+      - { label: "Textul articolului", name: "body", widget: "markdown" }
